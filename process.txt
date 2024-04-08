@@ -1,0 +1,13 @@
+Create a network in gns3
+Give the ip address for all in same subnet mask
+kali: sudo ifconfig eth0 <desired_ip_address> netmask <netmask>
+wind: ip <desired_ip_address>
+ping
+
+Process for 2cserver
+# Read from list
+#       e.g list of all hosts [192.168.10.1 . . . ]
+# connect 
+#       e.g telnet 192.168.0.1 
+# send commands  
+#       e.g. ping 192.168.0.1 -c 1000
