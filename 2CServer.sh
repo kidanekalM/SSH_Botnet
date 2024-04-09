@@ -1,11 +1,13 @@
-botIps = (
-        192.168.10.11,
-        192.168.10.12
-        )
-for botIp in botIps
+botIps=(
+    "192.168.10.11"
+    "192.168.10.12"
+)
+
+for botIp in "${botIps[@]}"
 do
-        echo botIp
-        # connect in ssh and ping the ip
+    echo "$botIp"
+    # Connect via SSH and ping the IP
+    ssh "$botIp" ping -c 4 "$botIp"
 done
 # Read from list
 #       e.g list of all hosts [192.168.10.1 . . . ]
