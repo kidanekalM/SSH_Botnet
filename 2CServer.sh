@@ -4,7 +4,6 @@ botIps=(
 )
 echo "Enter the command to be executed by bots: "
 read userCommand
-echo ${userCommand}
 for botIp in "${botIps[@]}"
 do
     echo "$botIp"
