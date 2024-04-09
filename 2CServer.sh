@@ -2,12 +2,14 @@ botIps=(
     "192.168.10.11"
     "192.168.10.12"
 )
-
+echo "Enter the command to be executed by bots: "
+read userCommand
+echo ${userCommand}
 for botIp in "${botIps[@]}"
 do
     echo "$botIp"
     # Connect via SSH and ping the IP
-    ssh "$botIp" ping -c 4 "$botIp"
+    ssh "$botIp" ${userCommand}
 done
 # Read from list
 #       e.g list of all hosts [192.168.10.1 . . . ]
