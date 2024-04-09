@@ -5,6 +5,7 @@ botIps = (
 for botIp in botIps
 do
         echo botIp
+        # connect in ssh and ping the ip
 done
 # Read from list
 #       e.g list of all hosts [192.168.10.1 . . . ]
