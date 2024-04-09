@@ -1,7 +1,11 @@
-botIp = (
+botIps = (
         192.168.10.11,
         192.168.10.12
         )
+for botIp in botIps
+do
+        echo botIp
+done
 # Read from list
 #       e.g list of all hosts [192.168.10.1 . . . ]
 # connect 
