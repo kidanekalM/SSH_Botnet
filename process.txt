@@ -8,7 +8,15 @@ memory 46MB and disk 56.55MB
 Encountered kernel panic not syncing no working init found when installing on virtualbox
  fixed by changing the ram to 70MB
  telnet works on tiny core but not ssh we will be using telnet
+Statically assign ip address to tiny core
+ sudo ifconfig eth0 192.168.10.11 255.255.255.0
 Downloaded SSH on tiny core
+added a few routers with telnet pwd
+R5(config)#line vty 0 15
+R5(config-line)#password pwd
+R5(config-line)#login
+R5(config-line)#line vty 0 15
+
 when connecting in ssh if ye get error 
 systemctl status ssh -  check status for ssh
 systemctl start ssh
