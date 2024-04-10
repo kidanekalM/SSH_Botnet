@@ -6,7 +6,7 @@ sudo ifconfig eth0 192.168.10.10
 Downloaded Tiny core "Core" version as a bot
 memory 46MB and disk 56.55MB
 Encountered kernel panic not syncing no working init found when installing on virtualbox
- fixed by adding more ram
+ fixed by changing the ram to 70MB
 Downloaded SSH on tiny core
 when connecting in ssh if ye get error 
 systemctl status ssh -  check status for ssh
