@@ -11,6 +11,8 @@ Encountered kernel panic not syncing no working init found when installing on vi
 Statically assign ip address to tiny core
  sudo ifconfig eth0 192.168.10.11 255.255.255.0
 Downloaded SSH on tiny core
+remmber to add username and password
+R5(config)# username admin password admin
 added a few routers with telnet pwd
 R5(config)#line vty 0 15
 R5(config-line)#password pwd
