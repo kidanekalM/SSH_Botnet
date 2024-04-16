@@ -1,6 +1,6 @@
 botIps=(
-    "192.168.10.11"
-    "192.168.10.12"
+    "admin@192.168.10.11"
+    "admin@192.168.10.12"
 )
 echo "Enter the command to be executed by bots: "
 read userCommand
@@ -10,6 +10,7 @@ do
     # Connect via SSH and ping the IP
     ssh "$botIp" ${userCommand}
 done
+# check add username and password
 # Read from list
 #       e.g list of all hosts [192.168.10.1 . . . ]
 # connect 
