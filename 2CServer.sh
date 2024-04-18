@@ -6,7 +6,7 @@ echo "Enter the command to be executed by bots: "
 read userCommand
 for botIp in "${botIps[@]}"
 do
-    echo "$botIp"
+    echo "connecting to:  $botIp"
     # Connect via SSH and ping the IP
     ssh "$botIp" ${userCommand}
 done
