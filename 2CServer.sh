@@ -17,3 +17,4 @@ done
 #       e.g telnet 192.168.0.1 
 # send commands  
 #       e.g. ping 192.168.0.1 -c 1000
+#optional add multi connection
