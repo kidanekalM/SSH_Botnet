@@ -7,8 +7,8 @@ read userCommand
 for botIp in "${botIps[@]}"
 do
     echo "connecting to:  $botIp"
-    # Connect via SSH and ping the IP
-    ssh "$botIp" ${userCommand}
+    # Connect via SSH or telnet and send the command
+    telnet "$botIp" ${userCommand}
 done
 # check add username and password
 # Read from list
