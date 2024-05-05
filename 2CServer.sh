@@ -1,6 +1,6 @@
 botIps=(
-    "admin@192.168.10.11"
-    "admin@192.168.10.12"
+    "192.168.10.11"
+    "192.168.10.12"
 )
 echo "Enter the command to be executed by bots: "
 read userCommand

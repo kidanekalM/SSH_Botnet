@@ -33,3 +33,17 @@ Process for 2cserver
 #       e.g telnet 192.168.0.1 
 # send commands  
 #       e.g. ping 192.168.0.1 -c 1000
+_______________________________________________________
+
+Implementation Commands
+________________________________________________________
+kali: 
+sudo ifconfig eth0 192.168.10.10 netmask 255.255.255.0
+
+Bot / Router - payload
+conf t
+int fa0/0 ip address 192.168.10.11 255.255.255.0
+no shutdown
+line vty 0 4
+password admin
+enable password admin
