@@ -40,10 +40,20 @@ ________________________________________________________
 kali: 
 sudo ifconfig eth0 192.168.10.10 netmask 255.255.255.0
 
-Bot / Router - payload
+Bot 1/ Router - payload
 conf t
 int fa0/0 ip address 192.168.10.11 255.255.255.0
 no shutdown
 line vty 0 4
 password admin
 enable password admin
+
+Bot 2/ Router - payload
+conf t
+int fa0/0 ip address 192.168.10.12 255.255.255.0
+no shutdown
+line vty 0 4
+password admin
+enable password admin
+
+-obtain multi connection and password in kali
