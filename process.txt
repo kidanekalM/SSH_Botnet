@@ -56,4 +56,20 @@ line vty 0 4
 password admin
 enable password admin
 
--obtain multi connection and password in kali
+-obtain multi connection and password in kali 
+---------------------------------------------
+kali password
+# Spawn Telnet process
+spawn telnet $hostname $port
+
+# Expect the login prompt
+expect "login:"
+
+# Send the username
+send "$username\r"
+
+# Expect the password prompt
+expect "Password:"
+
+# Send the password
+send "$password\r"
