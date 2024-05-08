@@ -73,3 +73,14 @@ expect "Password:"
 
 # Send the password
 send "$password\r"
+_______________________________________________________
+Use different terminals for solution to connect to multiple telnet 
+# Loop through the list of hosts and connect to each Telnet session
+foreach host $hosts {
+    spawn telnet $host
+    expect "username:"
+    send "$username\r"
+    expect "password:"
+    send "$password\r"
+    interact
+}
